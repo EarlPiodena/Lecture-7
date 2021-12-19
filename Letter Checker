@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string ltr;
+	cout << "Enter a letter: ";
+	cin >> ltr;
+
+	if ((ltr == "a") || (ltr == "e") || (ltr == "i") || (ltr == "o") || (ltr == "u ") || (ltr == "A") || (ltr == "E") || (ltr == "I") || (ltr == "O") || (ltr == "U")
+	{
+		cout << "Yes that is a vowel";
+	}
+	else if ((ltr == "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P"))
+	{
+		cout << "This is a consonant";
+	}
+	else {
+		cout << "Invalid Input" << endl;
+	}
+}
