@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std; 
+
+int main() { 
+    string lateFriend, money; 
+    cout << "You are killing time in the Dubai Mall , waiting for your friend who is always late.\n"; 
+    cout << "You receive a text telling you how late they're going to be\n"; 
+    cout << "You checked your phone for the message Is your friend late or not? (y/n): "; 
+    cin >> lateFriend;
+
+if (lateFriend == "y")
+{
+    cout << "Your friend is going to be late so you decided to go buy coffee\n";
+    cin >> money;
+    if (money == "y")
+    {
+        cout << "You went to Starbucks and bought a coffee while you wait for your late friend.";
+    }
+    else if (money == "n")
+    {
+        cout << "You did not feel like drinking coffee, you then go for a long walk around the city mall.";
+    }
+    else
+    {
+        cout << "Enter the correct answer to continue";
+    }
+}
+else if (lateFriend == "n")
+{
+    cout << "Your friend decided to be early and is already at the mall waiting for you";
+}
+else
+{
+    cout << "Enter the correct answer to continue";
+
+
+    cin.get();
+    return 0;
+}
